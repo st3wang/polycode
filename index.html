@@ -1,0 +1,67 @@
+<style>
+    html body {
+        margin: 0px;
+        padding: 0px;
+        font-family: san-serif
+    }
+    input {
+        border:0px;
+        background-color:lightgreen;
+        width:500px;
+        font-size:16px;
+        padding:5px;
+    }
+    textarea {
+        border:0px;
+        background-color:#E5DCAC;width:500px;padding:10px;font-size:14px; margin-bottom:2px
+    }
+</style>
+
+<div id="container">
+<input id="componentNameInput" value="unique-name"/><br><br>
+Imports:<br><input id="importsInput"/><br><br>
+Style: <br>
+<textarea id="scriptText" rows="10" cols="100" 
+style="border:0px;background-color:#E5DCAC;width:500px;padding:10px;font-size:14px; margin-bottom:2px">
+</textarea><br><br>
+HTML: <br>
+<textarea id="domText" rows="10" cols="100"></textarea><br><br>
+Properties: <br>
+<input id="componentNameInput" 
+style="border:0px;background-color:orchid;width:500px;font-size:16px;padding:10px; margin-bottom:2px"
+value="color: String"/><br>
+<input id="componentNameInput" 
+style="border:0px;background-color:orchid;width:500px;font-size:16px;padding:10px; margin-bottom:2px"
+value="breed: String"/><br>
+<input id="componentNameInput" 
+style="border:0px;background-color:orchid;width:500px;font-size:16px;padding:10px; margin-bottom:2px"
+value="age: Number"/><br>
+Behaviors:<br>
+<input id="componentNameInput" 
+style="border:0px;background-color:lightgreen;width:500px;font-size:16px;padding:10px"
+value="bark"/><br>
+<textarea id="scriptText" rows="10" cols="100" 
+style="border:0px;background-color:gold;width:500px;padding:10px;font-size:14px; margin-bottom:2px"/>
+var message = "hello";
+console.log(message);
+</textarea><br>
+<input id="componentNameInput" 
+style="border:0px;background-color:lightgreen;width:500px;font-size:16px;padding:10px"
+value="bark"/><br>
+<textarea id="scriptText" rows="10" cols="100" 
+style="border:0px;background-color:gold;width:500px;padding:10px;font-size:14px; margin-bottom:2px"/>
+var message = "hello";
+console.log(message);
+</textarea><br><br>
+<textarea style="position:absolute;top:0px;right:0px;height:500px">
+</textarea>
+</div>
+
+<script>
+    function addFunction() {
+        var ta = document.createElement('textarea');
+        ta.rows = 10;
+        ta.cols = 100;
+        container.appendChild(ta);
+    }
+</script>
